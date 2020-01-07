@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <link rel="icon" href="logo-original-web.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/contact-us.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://kit.fontawesome.com/88e7b657ae.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="wrapper">
+                <header>
+                      <nav>
+                            <div class="menu-icon">
+                                  <i class="fa fa-bars fa-2x"></i>
+                            </div>
+                            <div class="logo">
+                                    <a href="index.html"><img src="images/logo-original-web.png" alt="" width="80px" height="50px"></a>
+                            </div>
+                            <div class="menu">
+                                  <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="whatwedo.html">What We Do</a></li>
+                                        <li><a href="contact-us.html">Contact Us</a></li>
+                                  </ul>
+                            </div>
+                      </nav>
+                </header>
+          </div>
+          <script type="text/javascript">
+          // Menu-toggle button
+          $(document).ready(function() {
+                $(".menu-icon").on("click", function() {
+                      $("nav ul").toggleClass("showing");
+                });
+          });
+          // Scrolling Effect
+          $(window).on("scroll", function() {
+                if($(window).scrollTop()) {
+                      $('nav').addClass('black');
+                }
+    
+                else {
+                      $('nav').removeClass('black');
+                }
+          })
+          </script>
+<div class="contact-us">
+        <div class="title">
+          <h1>Contact us</h1>
+        </div>
+        <div class="form">
+          <form action="https://formspree.io/Ackprivatelimited@gmail.com " method="POST">
+          <div class="form-items">
+            <input type="text" class="input" placeholder="Username" name="username">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="form-items">
+            <input type="text" class="input" placeholder="Email" name="email">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="form-items">
+            <textarea class="input message" cols="30" rows="10" placeholder="Message....." name="message"></textarea>
+          </div>
+        </div>
+        
+        <div class="btn">
+          <input type="submit" name="submit" class="button">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </form>
+        
+        <div class="social-icons">
+          <div class="facebook">
+           <a href="https://www.facebook.com/ackdigitalprivatelimited/"> <span><i class="fab fa-facebook-f" aria-hidden="true" ></i></span> </a>
+          </div>
+          <div class="twitter">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="instagram">
+            <a href="https://instagram.com/ack_digital?igshid=1ocv3cc75kzle">
+              <span><i class="fab fa-instagram"></i> </span>
+            </a>
+          </div>
+        </div>
+        </div>
+<footer class="center bg-light" style="text-align: center">
+<p>ACK Digital Private Limited &copy; 2019</p>
+</footer>
+</body>
+</html>

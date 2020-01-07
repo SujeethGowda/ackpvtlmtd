@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us</title>
+    <link rel="icon" href="logo-original-web.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/about-us.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://kit.fontawesome.com/88e7b657ae.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="wrapper">
+                <header>
+                      <nav>
+                            <div class="menu-icon">
+                                  <i class="fa fa-bars fa-2x"></i>
+                            </div>
+                            <div class="logo">
+                                    <a href="index.html"><img src="images/logo-original-web.png" alt="" width="80px" height="50px"></a>
+                            </div>
+                            <div class="menu">
+                                  <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="whatwedo.html">What We Do</a></li>
+                                        <li><a href="contact-us.html">Contact Us</a></li>
+                                  </ul>
+                            </div>
+                      </nav>
+                </header>
+          </div>
+          <script type="text/javascript">
+          // Menu-toggle button
+          $(document).ready(function() {
+                $(".menu-icon").on("click", function() {
+                      $("nav ul").toggleClass("showing");
+                });
+          });
+          // Scrolling Effect
+          $(window).on("scroll", function() {
+                if($(window).scrollTop()) {
+                      $('nav').addClass('black');
+                }
+    
+                else {
+                      $('nav').removeClass('black');
+                }
+          })
+          </script>
+        <section class="description">
+                <div class="container gird-2">
+                    <h2 style="color: white">About Us</h2>
+                        <div class="center">
+                            <img src="/images/whatwedo.jpg" alt="what-we-do" width="500px" height="350px">
+                        </div>
+                            <div class="value">
+                                <p>We believe in igniting your business.
+    
+                                        ACK digital private limited was established in 2019. This place is responsible for bringing creative ideas and enthusiasm to give away a business solution.
+                                        
+                                        The vision of the company is to ensure you attain business growth by aligning your business strategies with the new edge technology and by providing various services like branding, promotion, Digital marketing and many more.
+                                        
+                                        We have a combative, dynamic and determined innovative team showcasing strategists, visual creators, scholars - giving world-class plan and innovation arrangements. The group is refreshed with the most recent patterns in Branding, Design, Development and Technology. </p>
+                                    </div>
+                        </div>
+            </section>
+<footer class="center bg-light" style="text-align: center">
+    <p>ACK Digital Private Limited &copy; 2019</p>
+</footer>
+</body>
+</html>
